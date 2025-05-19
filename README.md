@@ -40,3 +40,15 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 omz reload
 ```
+
+## goenv
+
+```bash
+git clone https://github.com/go-nv/goenv.git ~/.goenv
+echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.zshenv
+echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.zshenv
+echo 'eval "$(goenv init -)"' >> ~/.zshenv
+echo 'export PATH="$GOROOT/bin:$PATH"' >> ~/.zshenv
+echo 'export PATH="$PATH:$GOPATH/bin"' >> ~/.zshenv
+omz reload
+```
