@@ -31,7 +31,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```bash
 sudo apt update
 sudo apt install stow -y
-git clone git@github.com:TimNekk/dotfiles.git ~/dotfiles
+git clone https://github.com/TimNekk/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow --adopt .
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
